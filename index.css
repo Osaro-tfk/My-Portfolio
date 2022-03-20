@@ -1,0 +1,193 @@
+header{
+    background-color: #5b4f47;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color: #ffffff;
+    border: 8px solid #ffffff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+}
+nav{
+    background-color: #bd9479;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #5b4f47;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 250px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+}
+.bio{
+    background-color: #5b4f47;
+    color: #ffffff;
+    width: 50%;
+    
+}
+.bio-image{
+    width: 50%;
+}
+section h2{
+    width: fit-content;
+    font-size: 20px;
+    text-align: start;
+    color: #5b4f47;
+    background-color: #bd9479;
+    margin: 100px;
+    border: 10px 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: grid;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.links{
+    text-align: center;
+    margin: 20px 10px;
+    white-space: nowrap; 
+}
+.links li{
+    display: contents;
+}
+.links li a{
+    text-align: left;
+    text-decoration: none;
+    color: #5b4f47;
+}
+footer{
+    background: #5b4f47;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/*pseudo classes*/
+nav li a:hover{
+    text-decoration: underline;
+    background-color: bisque;
+    padding: 3px;
+}
+nav li:first-child{
+    margin: 500px 300px;
+}
+.links li a:hover{
+    text-decoration: underline;
+    background-color: bisque;
+    padding: 3px;
+}
+.links li:first-child{
+    margin: 50px 1000px;
+}
+/*responsive styles*/
+@media screen and (max-width: 1400px)
+{nav{
+    position:sticky;
+}
+nav li{
+font-size: 18px;
+}
+header{
+    font-size: 10px;
+    padding: 4px 10px;
+}
+main{
+    width: 600px;
+}
+section h2{
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 1000px)
+{
+header{
+    font-size: 8px;
+    padding: 4px 10px;
+}
+nav{
+    position:relative;
+}
+nav li{
+    font-size: 15px;
+    }
+div{
+display: block;
+font-size: 10px;
+}
+.bio{
+    width: 100%;
+}
+.bio-image{
+    width: 100%;
+}
+nav li{
+    display: inline;
+}
+nav li:first-child{
+    margin: 50px 20px;
+}
+}
+@media screen and (max-width: 900px)
+{
+header{
+    font-size: 8px;
+}
+nav{
+    position:relative;
+}
+nav li{
+    display: block;
+}
+nav li:first-child{
+    margin: 40px 10px;
+}
+div{
+    display: block;
+    font-size: 10px;
+    }
+    .bio-image{
+        width: 100%;
+}
+.images li{
+    width: 100%;
+}
+}
