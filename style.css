@@ -1,15 +1,136 @@
-header{
-    background-color: #5b4f47;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
+body{
+    max-width:100%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header h1{
-    color: #ffffff;
+/* styling the header */
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffff;
+    padding-top: 5px;
+    /* text-align: center; */
+    position: fixed;
+    top: 0;
+}
+
+/* header contents */
+.header-contents{
+    margin: auto;
+    color: #000;
+    display: flex;
+    max-width: 1440px;
+    width: 88%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    cursor: pointer;
+}
+nav{
+   display: flex;
+   align-items: center; 
+}
+.header-contents ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.header-contents ul a{
+    margin-right: 3rem;
+    text-decoration:none;
+}
+.header-contents ul a:hover{
+    border-bottom: 3px solid #e7332b;
+}
+.button-container button{
+    background-color: #e7332b;
+    padding: 11px 35px;
+    border-radius: 0 0 8px 0;
+    border: 0px;
+    color:#fff;
+}
+
+/* Styling about */
+#about{
+    padding-top: 220px;
+    display: block;
+    max-width: 1440px;
+    width:80%;
+    margin: auto;
+}
+.about-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.about-content{
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+.about-title{
+
+}
+.image1-container{
+    display: flex;
+    justify-content: center;
+}
+.image1{
+    width: 55%;
+}
+.about-info{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.00938em;
+    font-style: normal;
+    /* font-weight: 800;
+    font-size: 40px;
+    line-height: 49px; */
+    text-align: center;   
+}
+
+/* styling the websites section */
+#websites{
+    padding-top: 50px;
+    display: block;
+    max-width: 1440px;
+    width:80%;
+    margin: auto;
+}
+.websites-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.websites-group{
+    display:inline-flex;
+    /* grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 10px;
+    padding: 20px;
+    grid-row-start: 20px; */
+}
+.websites-container img{
+    width: 55%;
+}
+/* header h1{
     border: 8px solid #ffffff;
     padding: 6px 12px;
     display: inline-block;
@@ -17,7 +138,6 @@ header h1{
     font-size: 20px;
 }
 nav{
-    background-color: #bd9479;
     padding: 20px;
     position: sticky;
     top: 80px;
@@ -229,4 +349,4 @@ nav{
     padding: 10px;
     top: 10px;
 }
-}
+} */

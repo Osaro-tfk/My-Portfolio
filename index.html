@@ -5,56 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taiye Kadiri - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="main-container">
+    <!-- Header -->
     <header>
-        <nav>
-            <h1>MY PORTFOLIO</h1>
-            <ul>
-                <li><a href="https://www.canva.com/design/DAE7CDMy7xk/qVuzt5fbY3AZKRvWbmcr8g/view?utm_content=DAE7CDMy7xk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Download my CV</a></li>
-                <li><a>taiyefunmilola@gmail.com</a></li>
-            </ul>
-        </nav>
+        <div class="header-contents">
+            <h1 class="header-title">PORTFOLIO</h1>
+            <nav>
+                <ul>
+                    <a href="#about">About</a>
+                    <a href="#websites">Websites</a>
+                    <a href="#articles">Articles</a>
+                </ul>
+                <div class="button-container">
+                    <button>
+                        <a href="https://www.canva.com/design/DAE7CDMy7xk/qVuzt5fbY3AZKRvWbmcr8g/view?utm_content=DAE7CDMy7xk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Download Resume</a>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div id="first">
-            <div id="second">
-                <div id="third">
-                    <img src="assets/TFK1.jpeg" alt="Image of TFK" class="bio-image">
-                    <span><h3>Hi! I'm Taiye<br>
-                        I am a content creator & a frontend developer<br>
-                        <b>THIS IS MY PORTFOLIO</b></h3></span>
+    <!-- About-Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <p class="about-title">Hi! I'm Taiye</p>
+                <div class="image1-container">
+                <img src="assets/TFK1.jpeg" alt="owner's image" class="image1">
+                </div>
+                <p class="about-info">I am a software developer and content creator. I have experience building projects with the web languages, writing and creating video contents. I have a B.Sc. in Economics from the University of Lagos, Akoka, Lagos, Nigeria. I enjoy helping people, playing scrabble, meditating and watching videos on YouTube.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Websites created section -->
+    <section id="websites">
+        <div class="websites-container">
+            <p class="section2-title">Websites Built</p>
+            <div class="website-group">
+                <div class="website1-container">
+                    <div>
+                        <a href="https://mario-club-project.netlify.app/" target="_blank">
+                            <img src="assets/mario-club.png" alt="mario-club">
+                        </a>
+                    </div>
+                    <p>Mario Club</p>
+                </div>
+                <div class="website2-container">
+                    <div>
+                        <a href="https://netninja-pro.netlify.app/" target="_blank">
+                            <img src="assets/net-ninja.png" alt="net-ninja-pro">
+                        </a>
+                    </div>
+                    <p>Net Ninja</p>
+                </div>
+                <div class="website3-container">
+                    <div>
+                        <a href="https://frontendmentor-nft-card-component.netlify.app/" target="_blank">
+                            <img src="assets/nft-card.png" alt="nft-card">
+                        </a>
+                    </div>
+                    <p>NFT Card</p>
                 </div>
             </div>
         </div>
-    </main>
-    <section>
+    </section>
+
+    <section id="articles">
+        <div class="articles-container">
+            <p class="section3-title">Articles Written</p> 
+            <ul class="article-links">
+                <li><a href="https://docs.google.com/document/d/1ZSojIAF72KBG1Zdie_ctHaTXFm9tGPXsCTBh_meBT9c/edit?usp=sharing">A Miracle</a></li>
+                <li><a href="https://docs.google.com/document/d/1RlcH1PxjdS-DyB8fC1cfYN9wOFM60Iwh-XQdxXipnfA/edit?usp=sharing">The Cost of Fame</a></li>
+                <li><a href="https://docs.google.com/document/d/1c8T9z3ezY9Jq8-gcp6QKZMCOf2KH3XtqINydfjegOHE/edit?usp=sharing">Writing Prompts</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="designs-section">
         <h2>Graphics Design</h2>
-    <ul class="images">
-        <li><img src="assets/business card1.png" alt="business card 1"></li>
-        <li><img src="assets/business card2.png" alt="business card 2"></li>
-        <li><img src="assets/graphics banner1.png" alt="banner 1"></li>
-        <li><img src="assets/graphics banner2.png" alt="banner 2"></ing></li>
-    </ul>
-    <h2>Contents Written</h2>
-    <ul class="links">
-        <li><a href="https://docs.google.com/document/d/1ZSojIAF72KBG1Zdie_ctHaTXFm9tGPXsCTBh_meBT9c/edit?usp=sharing">A Miracle</a></li>
-        <li><a href="https://docs.google.com/document/d/1RlcH1PxjdS-DyB8fC1cfYN9wOFM60Iwh-XQdxXipnfA/edit?usp=sharing">The Cost of Fame</a></li>
-        <li><a href="https://docs.google.com/document/d/1c8T9z3ezY9Jq8-gcp6QKZMCOf2KH3XtqINydfjegOHE/edit?usp=sharing">Writing Prompts</a></li>
-    </ul>
-    <h2>Websites Built</h2>
-    <ul class="sites">
-        <li><a href="mario-club-project.netlify.app">Mario Club</a></li>
-        <li><a href="netninja-pro.netlify.app">Net Ninja</a></li>
-    </ul>
+        <ul class="images">
+        <li><img src="assets/business card1.png" alt="card1"></li>
+        <li><img src="assets/business card2.png" alt="card2"></li>
+        <li><img src="assets/graphics banner1.png" alt="banner1"></li>
+        <li><img src="assets/graphics banner2.png" alt="banner2"></ing></li>
+        </ul>
     </section>
-    <section>
-        <footer>
-            <p class="copyright">Copyright Taiye Kadiri 2022</p>
-        </footer>
-    </section>
-  
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <p>&copy Copyright Taiye Kadiri 2022</p>
+            <a href="mailto:taiyefunmilola@gmail.com">
+                <p>taiyefunmilola@gmail.com</p>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
